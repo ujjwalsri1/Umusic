@@ -172,9 +172,9 @@ new Vue({
       vm.generateTime();
     };
 
-    this.audio.onended = function () {
-      vm.nextTrack();
-      vm.isTimerPlaying = true;
+    this.audio.onended = function() {
+         vm.isTimerPlaying = true; // set BEFORE nextTrack
+         vm.nextTrack();
     };
 
     // preload covers
