@@ -17,6 +17,14 @@ new Vue({
           url: "https://youtu.be/AX7t8ZwroHQ?feature=shared",
           favorited: false
         },
+        { name: "Dildara ❤️ ", artist: "Shafqat Amanat Ali", cover: "./img/2.jfif", source: "./mp3/2.mp3", url: "https://youtu.be/gQ5qVtoLMk4?feature=shared", favorited: true },
+        { name: "Pehli Mohabbat", artist: "Darshan Raval", cover: "./img/3.jpg", source: "./mp3/3.mp3", url: "https://youtu.be/Gq2hcE4V7Jo?feature=shared", favorited: false },
+        { name: "Nagada Nagada 🔥", artist: "Sonu Nigam", cover: "./img/4.jpg", source: "./mp3/4.mp3", url: "https://youtu.be/mS9J-a5W1Xc?feature=shared", favorited: false }, 
+        { name: "I Love You", artist: "Pritam", cover: "./img/5.jpg", source: "./mp3/5.mp3", url: "https://youtu.be/0JLRExeOH-k?feature=shared", favorited: true },
+        { name: "Kesariya", artist: "Arjit Singh", cover: "./img/6.jpg", source: "./mp3/6.mp3", url: "https://www.youtube.com/watch?v=XsX3ATc3FbA&ab_channel=HYBELABELS", favorited: false },
+        { name: "Mast Magan", artist: "Arjit Singh", cover: "./img/7.jpg", source: "./mp3/7.mp3", url: "https://www.youtube.com/watch?v=gdZLi9oWNZg&ab_channel=HYBELABELS", favorited: true },
+        { name: "Chaand Baaliyan", artist: "Aditya A.", cover: "./img/8.jpg", source: "./mp3/8.mp3", url: "https://youtu.be/7c3-Gei5j4w?feature=shared", favorited: false }, 
+        { name: "Tera Hone Laga Hoon", artist: "Atif Aslam", cover: "./img/9.jpg", source: "./mp3/9.mp3", url: "https://www.youtube.com/watch?v=WMweEpGlu_U&ab_channel=HYBELABELS", favorited: false }
         // 👉 rest of your songs unchanged
       ],
       currentTrack: null,
