@@ -383,5 +383,38 @@ body {
   pointer-events: none;
   opacity: 0;
 }
+.upload-box {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.upload-box input {
+  margin-bottom: 5px;
+}
+
+.playlist {
+  max-height: 120px;
+  overflow-y: auto;
+  margin-bottom: 15px;
+  background: #f5f7fb;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.playlist-item {
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.playlist-item:hover {
+  background: #e0e7f0;
+}
+
+.playlist-item.active {
+  background: #532ab9;
+  color: white;
+}
 
 /*# sourceMappingURL=main.css.map */
