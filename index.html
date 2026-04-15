@@ -19,10 +19,13 @@
     <div class="wrapper" id="app">
       <img id="logo" src="img/umusic.jfif">
       <!-- Upload music -->
-<div class="upload-box">
-  <input type="file" multiple accept="audio/*" @change="loadFiles">
-  <p>Select songs from your device</p>
-</div>
+      <div class="upload-box">
+  <label class="upload-btn">
+    🎵 Upload Music
+    <input type="file" multiple accept="audio/*" @change="loadFiles">
+  </label>
+  <p class="upload-text">Choose songs from your device</p>
+      </div>
 
 <!-- Playlist -->
 <div class="playlist">
