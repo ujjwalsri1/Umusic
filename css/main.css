@@ -383,13 +383,61 @@ body {
   pointer-events: none;
   opacity: 0;
 }
+
 .upload-box {
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
-.upload-box input {
-  margin-bottom: 5px;
+.upload-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #6a5af9, #d66efd);
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(106, 90, 249, 0.3);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.upload-btn:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 12px 25px rgba(106, 90, 249, 0.4);
+}
+
+.upload-btn:active {
+  transform: scale(0.95);
+}
+
+.upload-btn input {
+  display: none;
+}
+
+.upload-text {
+  font-size: 12px;
+  color: #71829e;
+  margin-top: 8px;
+}
+
+/* optional glow effect */
+.upload-btn::before {
+  content: "";
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  background: radial-gradient(circle, rgba(255,255,255,0.3), transparent);
+  top: -25%;
+  left: -25%;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.upload-btn:hover::before {
+  opacity: 1;
 }
 
 .playlist {
