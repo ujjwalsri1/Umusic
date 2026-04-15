@@ -18,6 +18,26 @@
   <body>
     <div class="wrapper" id="app">
       <img id="logo" src="img/umusic.jfif">
+      <!-- Upload music -->
+<div class="upload-box">
+  <input type="file" multiple accept="audio/*" @change="loadFiles">
+  <p>Select songs from your device</p>
+</div>
+
+<!-- Playlist -->
+<div class="playlist">
+  <div 
+    v-for="(track, index) in tracks" 
+    :key="index"
+    :class="['playlist-item', {active: index === currentTrackIndex}]"
+    @click="selectTrack(index)"
+  >
+    {{ track.name }}
+  </div>
+</div>
+
+<!-- Hidden audio -->
+<audio ref="audio"></audio>
       <div class="player">
         <div class="player__top">
           <div class="player-cover">
